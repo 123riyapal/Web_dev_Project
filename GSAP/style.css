@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #292828;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    border-radius: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    box-shadow: 5px 5px 5px rgb(201, 137, 121);
+}
+
+#box:hover {
+    animation: moveAndRotate 5s linear infinite ; /* Move and rotate animation */
+}
+
+/* Keyframes animation for moving and rotating */
+@keyframes moveAndRotate {
+    0% {
+        background-color: indianred;
+        transform: translateX() rotate(0deg);
+    }
+    100% {
+        background-color: rgb(58, 12, 12);
+        transform: translateX(calc(100vw + 200px)) rotate(360deg);
+    }
+}
+
+
+

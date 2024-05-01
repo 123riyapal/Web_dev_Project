@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #292828;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(78, 46, 98);
+    border-radius: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    box-shadow: 5px 5px 5px rgb(104, 88, 80);
+}

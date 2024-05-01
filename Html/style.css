@@ -1,0 +1,65 @@
+section{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 200px;
+    width:200px;
+    background-color: teal;
+    transition: width 2s, height 4s;
+
+}
+.box:hover{
+    height: 220px;
+    width:400px;
+    background-color: teal;
+    animation-name: AnimationExample;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes AnimationExample {
+    0%{
+        background-color: red;
+        transform: translateX(200px);
+        border: 4px dotted coral;
+        height: 300px;
+        width: 400px;
+    }
+    25%{
+        background-color: teal;
+        transform: skew(20deg);
+        border: 4px dotted royalblue;
+
+        height: 300px;
+        width: 400px;
+    }
+    50%{
+        background-color: blueviolet;
+        transform: scale(2);
+        border: 4px dotted purple;
+
+        transition: all;
+        height: 300px;
+        width: 400px;
+    }
+    75%{
+        background-color: blue;
+        transform: scale(0.2);
+        transition: all;
+        border: 4px dotted cyan;
+
+        height: 300px;
+        width: 400px;
+     }
+    100%{
+        background-color: cadetblue;
+        transform: rotate(20deg);
+        height: 300px;
+        border: 4px dotted blue;
+
+        width: 400px;
+    }
+
+}

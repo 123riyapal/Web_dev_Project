@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.container{
+    background-image: url(milad-fakurian-seA-FPPXL-M-unsplash.jpg);
+    background-position: right;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    nav{
+        display: flex;
+        ul{
+            margin: 28px;
+            li{
+                display: inline;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                padding: 12px;
+                font-family: sans-serif;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding-bottom: 12px;
+                    font-size: 1.4rem;
+                }
+                a:hover{
+                    border-bottom: 2px solid white;
+                    text-transform: uppercase;
+                }
+                }
+    
+        }
+
+    }
+
+}

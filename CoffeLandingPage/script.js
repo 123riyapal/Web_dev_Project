@@ -48,6 +48,10 @@ document.addEventListener("DOMContentLoaded", function() {
 //     boxShadow: '10px 10px 7px purple',
 //     scale:0.5
 // })
+document.querySelector('.menu-button').addEventListener('click', function() {
+  this.classList.toggle('clicked');
+  this.style.color="white";
+});
 document.addEventListener("DOMContentLoaded", function() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -59,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollTrigger: {
       trigger: ".main-page",
       start: "top 80%",  // when the top of the element is 80% from the top of the viewport
-      toggleActions: "play none none none"
+      toggleActions: "play none none none "
     }
   });
 
@@ -149,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
     y: -50,
     opacity: 0,
     duration: 1,
+    stagger:0.2,
     scrollTrigger: {
       trigger: ".app",
       start: "top 80%",
@@ -156,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   gsap.from(".app p", {
-    y: -50,
+    y: 20,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
@@ -214,11 +219,47 @@ document.addEventListener("DOMContentLoaded", function() {
     y: 50,
     opacity: 0,
     duration: 1,
+    stagger:1,
     scrollTrigger: {
       trigger: ".gallery",
       start: "top 80%",
       toggleActions: "play none none none"
     }
   });
+  gsap.from("h1" , {
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: "h1",
+      start: "top 80%",  // when the top of the element is 80% from the top of the viewport
+      toggleActions: "play none none none"
+    }
+  });
+  gsap.from(".footer-right", {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".footer-right",
+      start: "top 90%",
+      toggleActions: "play none none none"
+    }
+  });
+
+  // Animation for the gallery section
+  gsap.from(".footer-left", {
+    y: -50,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".footer-left",
+      start: "top 80%",
+      toggleActions: "play none none none"
+    }
+  });
+
+
 });
 

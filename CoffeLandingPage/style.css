@@ -91,6 +91,15 @@ button {
     font-size: 1.5rem;
 }
 
+
+
+.menu:hover{      
+    background-color: #C8953F;
+    color: white;
+    border: 1px solid #C8953F;
+    animation: animate 4s infinite;  
+    }
+
 .main-page {
     display: block;
     padding: 200px 0px 40px;
@@ -626,5 +635,17 @@ margin: 20px;
         text-align: left;
         padding-left: 220px;
     }
-    
-    
+    .menu-button:hover {
+        background-color: #C8953F;
+        color: white;
+        border: 1px solid #C8953F;
+        animation: animate 4s infinite; /* Animation continuously applied */
+      }
+  
+      @keyframes animate {
+        0% { background-color: white;
+        color:#C8953F }
+        50% { background-color: white; 
+        color:#C8953F}
+      }
+      

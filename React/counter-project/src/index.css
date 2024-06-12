@@ -1,0 +1,42 @@
+body{
+  background-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.increment{
+  color: green;
+}
+.count.incremented {
+  color: green; /* Color for incremented state */
+}
+.count.decremented{
+  color: red;
+}
+.count.reset{
+  color: rgba(0, 98, 255, 0.396);
+}
+.decrement{color: red;}
+.heading{
+  color: rgba(0, 98, 255, 0.61);
+  font-size: 5rem;
+}
+h1{
+  font-size: 5rem;
+  color: rgba(0, 98, 255, 0.396);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+button{
+  padding: 20px 30px;
+  margin: 10px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+.message{
+  color:red;
+  font-size: 2rem;
+}

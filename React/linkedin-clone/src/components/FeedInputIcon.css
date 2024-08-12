@@ -1,0 +1,17 @@
+.feedInputIcon {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.feed__Icons__title {
+    font-size: 15px;
+    margin-left: 5px;
+}
+.feedInputIcon:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}

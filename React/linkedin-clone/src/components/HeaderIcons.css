@@ -1,0 +1,22 @@
+.headerIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.headerIcons:hover{
+    color: black;
+}
+.header__Icons__title{
+    font-size: 10px;
+}
+.headerIcons >h3{
+    margin-top: 1px;
+}
+.Avatar_Icon{
+    object-fit: contain;
+    height: 25px !important;
+    width: 25px !important;
+}

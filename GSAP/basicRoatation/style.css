@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+}
+
+.box,.box1,.box2 {
+    background-color: cornflowerblue;
+    height:200px;
+    width: 200px;
+}
+.box1{
+    background-color: seagreen;
+}
+.box2{
+    background-color: rosybrown;
+}

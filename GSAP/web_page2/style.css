@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: gilroy;
+    src: url(./FONT/Gilroy-Regular.woff2);
+}
+@font-face {
+    font-family: gilroy1;
+    src: url(./FONT/Gilroy-Bold.woff2);
+}
+@font-face {
+    font-family: NeueMachine;
+    src: url(./FONT/NeueMachina-Regular.woff);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:gilroy;
+scroll-behavior: smooth;
+}
+html,
+body{
+height:100%;
+width:100%;
+}
+.navBar .logo{
+    display: flex;
+    gap: 5px;
+}
+nav .heading{
+    font-family: gilroy1;
+    font-size: 40.5px;
+    font-weight: 600;
+
+}
+nav i{
+    font-size: 50px;
+    rotate: 45deg;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 130px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.navBar .menu ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu ul li{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.navBar .menu{
+    display: flex;
+    gap: 24px;
+}
+.request-Btn {
+    position: relative;
+    padding: 20px 22px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.request-Btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.centre{
+    z-index: 9;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 9vw;
+
+}
+.centre .left{
+    width: 42%;
+    height: 100%;
+
+}
+.centre .left h1{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 4.4vw;
+    width: 80%;
+}
+.centre .left p{
+    font-size:1.01rem;
+    padding: 35px 0px;
+    font-family: "Space Grotesk", sans-serif;
+    width: 65%;
+
+}
+button{
+    cursor: pointer;
+}
+.left button{
+    background-color: black;
+    color: white;
+    padding: 20px 22px;
+    border-radius: 10px;
+    font-family: "Space Grotesk", sans-serif;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+
+
+}
+.left button:hover{
+    background-color: #b9ff66;
+    border: none;
+    color: black;
+}
+.centre .right{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+.centre .right img{
+    position: absolute;
+    right: 0;
+}
+
+.centrebottom{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: start;
+    padding-top: 160px;
+}
+.service_pannel .service{
+    padding: 140px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    
+
+}
+.service h3{
+    font-size: 2.2rem;
+    background-color: #b9ff66;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 7px 10px;
+    border-radius: 8px;
+
+}
+.service p{
+    font-size: 16px;
+    font-family: "Space Grotesk", sans-serif;
+    text-wrap: wrap;
+    width: 45%;
+
+}
+.serviceInfoButton{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 140px;
+    flex-wrap: wrap;
+    gap: 42px;
+    align-items: center;
+}
+.serviceInfoButton .container{
+    flex-shrink: 0;
+    width: 48%;
+    height: 260px;
+    border: 1.5px solid rgba(0, 0, 0, 0.99);
+    border-radius: 45px;
+    position: relative;
+    padding: 40px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.877);
+    
+}
+
+.container{
+    display: flex;
+    gap: 100px;
+    cursor: pointer;
+    
+}
+.container i {
+    display: inline-block;
+    font-size: 30px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 60%;
+    left: 8%;
+}
+.container h3{
+    font-size: 1.7rem;
+    height: 50%;
+    text-align: left;
+    padding: 10px;
+}
+.container h4{
+    position: absolute;
+    top: 65%;
+    left: 16%;
+    font-size: 1.2rem;
+    font-weight: 500;
+   
+}
+.container img{
+    height: 220px;
+    padding: 40px 10px ;
+    display: flex;
+    align-self: center;
+}
+.card1 h3 {
+    padding: 12px;
+    border-radius: 10px;
+   background-color: #b9ff66; 
+}
+.card2 h3,.card3 h3{
+    padding: 12px;
+    border-radius: 10px;
+
+    background-color: white;
+}
+.card1{
+    background-color: #f3f3f3;
+}
+.card1 i, .card2 i{
+    color: #b9ff66;
+}
+.card2{
+    background-color: #b9ff66;
+}
+.card3 {
+    background-color: black;
+    border: 1.5px solid bisque;
+}
+.card3 h4{
+    color: white;
+}
+.card3 i{
+    background-color: white;
+    color: #000;
+}

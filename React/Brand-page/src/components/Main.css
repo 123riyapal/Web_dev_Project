@@ -1,0 +1,70 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1125px;
+    margin: 80px auto 0;
+    padding: 0 20px;
+  }
+  
+  .left {
+    max-width: 553px;
+  }
+  
+  .left h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 20px;
+    width: 450px;
+  }
+  
+  .left p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .shop-button,
+  .category-button {
+    all: unset;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .shop-button {
+    background-color: rgb(175, 19, 19);
+    color: white;
+  }
+  
+  .category-button {
+    background-color: whitesmoke;
+    border: 2px solid blue;
+    color: black;
+  }
+  
+  .available-on {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .handle img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .right img {
+    width: 100%;
+    max-width: 503px;
+    height: auto;
+  }
+  
